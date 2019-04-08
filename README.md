@@ -1,4 +1,4 @@
-MobytServics Plugin
+MobytServices Plugin
 ==================
 
 ### Usage
