@@ -34,7 +34,7 @@ To send SMS with parameters:
 	...
     $sms = new SmsSimple(__LOGIN__, __PASSWORD__);
     $sms->setMessage('Hello ${name}!');
-    $sms->setRecipient('+336XXXXXXXX');
+    $sms->setRecipient(['0' => ["recipient" => "+336XXXXXXXX", "name" => "Gaotian"]]);
     $sms->send();
 	...
 ```
