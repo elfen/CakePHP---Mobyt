@@ -20,6 +20,18 @@ To send SMS simple:
     $sms->send();
 	...
 ```
+
+To send SMS with parameters:
+
+```php
+	...
+    $sms = new SmsParametric(__LOGIN__, __PASSWORD__);
+    $sms->setMessage('Hello ${name}!');
+    $sms->setRecipient(['0' => ["recipient" => "+336XXXXXXXX", "name" => "Gaotian"]]);
+    $sms->send();
+	...
+```
+
 ### Todo
 
 - Add unit test
@@ -27,17 +39,6 @@ To send SMS simple:
 
 
 ### Installation
-
-To send SMS with parameters:
-
-```php
-	...
-    $sms = new SmsSimple(__LOGIN__, __PASSWORD__);
-    $sms->setMessage('Hello ${name}!');
-    $sms->setRecipient(['0' => ["recipient" => "+336XXXXXXXX", "name" => "Gaotian"]]);
-    $sms->send();
-	...
-```
 
 In app/Config/bootstrap.php:
 
